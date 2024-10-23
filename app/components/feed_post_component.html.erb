@@ -18,4 +18,8 @@
       <%= @body %>
     </p>
   </div>
+
+  <%= button_to feed_path(@post_id), method: :delete do %>
+    <i class="fas fa-trash-alt"></i>
+  <% end %>
 </div>

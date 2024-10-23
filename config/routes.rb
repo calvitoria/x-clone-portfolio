@@ -11,5 +11,6 @@ Rails.application.routes.draw do
 
   root "feed#index"
 
-  resources :feed, only: [:index, :create]
+  resources :feed, only: [:index, :create, :destroy]
+
 end
