@@ -1,0 +1,28 @@
+/coverage
+.byebug_history
+.vscode
+public/*
+tmp/
+storage/
+app/assets/builds/*
+/config/master.key
+/config/credentials.yml.enc
+
+# Ignore SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore temporary files from IDEs and text editors.
+*.swp
+*.swo
+*~
+.project
+.idea
+.vscode/
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore the log directory and all log files.
+log/*
+!log/.keep
