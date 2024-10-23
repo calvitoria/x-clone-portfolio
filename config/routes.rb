@@ -11,5 +11,5 @@ Rails.application.routes.draw do
 
   root "feed#index"
 
-  get "/feed", to: "feed#index"
+  resources :feed, only: [:index, :create]
 end
