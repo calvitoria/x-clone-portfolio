@@ -1,0 +1,2 @@
+class FeedPost < ApplicationRecord
+end
