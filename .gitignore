@@ -26,3 +26,5 @@ app/assets/builds/*
 # Ignore the log directory and all log files.
 log/*
 !log/.keep
+
+/node_modules

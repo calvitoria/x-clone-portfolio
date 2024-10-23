@@ -1,0 +1,25 @@
+<div class="hover:bg-neutral shadow-md rounded-md overflow-hidden p-4">
+  <div class="flex pb-2">
+    <div>
+      <span class="text-lg font-semibold">Vitória Calvi 🌸</span>
+      <p class="text-md text-gray-600">@calvitoria</p>
+    </div>
+
+    <div>
+      <p class="text-sm text-neutral-content mt-1 ml-2">
+        • <%= @updated_at.strftime("%d %b %Y") %>
+      </p>
+    </div>
+  </div>
+
+  <div class="pb-2">
+    <h2 class="text-2xl font-medium mb-2"> <%= @title %> </h2>
+    <p class="text-lg text-neutral-content leading-tight">
+      <%= @body %>
+    </p>
+  </div>
+
+  <%= button_to feed_path(@post_id), method: :delete do %>
+    <i class="fas fa-trash-alt"></i>
+  <% end %>
+</div>
