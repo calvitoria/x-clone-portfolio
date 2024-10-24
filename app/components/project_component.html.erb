@@ -1,4 +1,4 @@
-<div class="hover:bg-neutral rounded-md overflow-hidden p-4 mt-8 mb-16 w-full max-w-md">
+<div class="hover:bg-neutral rounded-md p-4 mt-8 mb-16 w-full">
   <div class="flex justify-between items-end">
     <div class="flex-col">
       <h2 class="text-2xl font-medium capitalize"> <%= @title %> </h2>
@@ -12,6 +12,7 @@
       </p>
     </div>
   </div>
+
   <div class="mockup-browser border-accent-content border mt-4">
     <div class="mockup-browser-toolbar">
       <div class="input border-base-300 border">
@@ -22,7 +23,8 @@
       </div>
     </div>
   </div>
-      <%= button_to project_path(@project_id), method: :delete, class: "ml-4" do %>
-      <i class="fas fa-trash-alt"></i>
-    <% end %>
+
+  <%= button_to project_path(@project_id), method: :delete, class: "mt-4" do %>
+    <i class="fas fa-trash-alt"></i>
+  <% end %>
 </div>
