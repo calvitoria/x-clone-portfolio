@@ -1,0 +1,12 @@
+<div class="container w-medium mt-8">
+  <details class="collapse bg-base-200">
+    <summary class="collapse-title text-xl font-medium">Create new project</summary>
+    <div class="collapse-content">
+      <%= render(ProjectFormComponent.new) %>
+    </div>
+  </details>
+
+  <% @projects.each do |project| %>
+    <%= render(ProjectComponent.new(title: project.title, body: project.body, stack: project.stack, link: project.link, project_id: project.id)) %>
+  <% end %>
+</div>
