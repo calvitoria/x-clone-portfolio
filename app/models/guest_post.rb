@@ -1,0 +1,2 @@
+class GuestPost < ApplicationRecord
+end

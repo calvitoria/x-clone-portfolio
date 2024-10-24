@@ -1,0 +1,11 @@
+<div class="container mt-2 w-medium bg-default rounded-lg shadow-lg p-4">
+  <p class="text-lg">You can leave your comments and feedback here =)</p>  
+  <%= render(GuestPostFormComponent.new) %>
+
+  <h2 class="mt-8 text-xl font-bold">Previous Posts</h2>
+  <div class="mt-4 mb-4">
+    <% @guestposts.each do |post| %>
+      <%= render(GuestPostComponent.new(author: post.author, body: post.body, updated_at: post.updated_at)) %>
+    <% end %>
+  </div>
+</div>
