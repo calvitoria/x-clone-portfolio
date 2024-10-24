@@ -11,9 +11,10 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   root "feed#index"
-
   get "/about", to: "about#index"
+  get '/guestbook', to: 'guest_posts#index'
 
+  resources :guest_posts, only: [:create, :index, :destroy]
   resources :feed, only: [:index, :create, :destroy]
   resources :projects, only: [:index, :create, :destroy]
 end
