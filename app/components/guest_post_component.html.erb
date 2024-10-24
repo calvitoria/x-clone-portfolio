@@ -1,6 +1,13 @@
 <div class="hover:bg-neutral shadow-md rounded-md p-4 mb-4">
   <div class="flex pb-2">
-    <div>
+
+    <div class="avatar">
+      <div class="rounded-full">
+        <%= calvatar_for(@author, size: 50) %>
+      </div>
+    </div>
+
+    <div class="ml-4">
       <span class="text-lg text-secondary"> <%= @author %> </span> 
       <span class="text-sm text-neutral-content"> • <%= @updated_at.strftime("%d %b %Y") %> </span> 
     </div>

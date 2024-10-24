@@ -13,7 +13,7 @@ class GuestPostsController < ApplicationController
   private
 
   def guestpost_params
-    params.require(:guest_post).permit(:author, :title, :body)
+    params.permit(:author, :title, :body)
   end
 end
 

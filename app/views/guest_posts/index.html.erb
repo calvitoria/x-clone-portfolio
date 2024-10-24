@@ -5,7 +5,7 @@
   <h2 class="mt-8 text-xl font-bold">Previous Posts</h2>
   <div class="mt-4 mb-4">
     <% @guestposts.each do |post| %>
-      <%= render(GuestPostComponent.new(title: post.title, body: post.body, updated_at: post.updated_at)) %>
+      <%= render(GuestPostComponent.new(author: post.author, body: post.body, updated_at: post.updated_at)) %>
     <% end %>
   </div>
 </div>
