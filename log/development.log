@@ -2685,3 +2685,11 @@ Started GET "/about" for 127.0.0.1 at 2024-10-23 21:33:43 -0300
   
 ActionController::RoutingError (No route matches [GET] "/about"):
   
+Started GET "/about" for 127.0.0.1 at 2024-10-23 21:37:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+Started GET "/about" for 127.0.0.1 at 2024-10-23 21:37:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
