@@ -4,7 +4,6 @@ require "test_helper"
 
 class BannerComponentTest < ViewComponent::TestCase
   def test_component_renders_correctly
-    # Render the component
     rendered_component = render_inline(BannerComponent.new)
 
     assert_includes rendered_component.to_html, "https://github.com/user-attachments/assets/ccebd1ba-1b9e-4d61-9ffc-5caefad25c3f"
