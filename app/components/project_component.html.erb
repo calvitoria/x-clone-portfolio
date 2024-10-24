@@ -22,6 +22,11 @@
         </a>
       </div>
     </div>
+    <% if @project_image.attached? %>
+      <div class="border-accent-content flex justify-center border-t">
+        <%= image_tag @project_image, class: "w-full h-auto rounded-lg shadow-md" %>
+      </div>
+    <% end %>
   </div>
 
   <%= button_to project_path(@project_id), method: :delete, class: "mt-4" do %>

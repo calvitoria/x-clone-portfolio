@@ -28,6 +28,13 @@
   </div>
 
   <div class="flex flex-col mt-4">
+    <%= f.label :project_image, class: "font-bold text-gray-700 mb-2" %>
+    <%= f.file_field :project_image, 
+      class: "block w-full text-sm text-gray-500 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary file:text-white hover:file:bg-primary-focus", 
+      placeholder: "Upload your image..." %>
+  </div>
+
+  <div class="flex flex-col mt-4">
     <%= f.submit "Post", class: "btn btn-outline btn-accent w-full rounded-lg" %>
   </div>
 <% end %>

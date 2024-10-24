@@ -6,6 +6,7 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(projects_params)
+    @project.project_image.attach(projects_params[:project_image])
 
     redirect_to projects_index_path if @project.save
   end
@@ -20,6 +21,6 @@ class ProjectsController < ApplicationController
   private
 
   def projects_params
-    params.permit(:title, :body, :link, :stack)
+    params.permit(:title, :body, :link, :stack, :project_image)
   end
 end
