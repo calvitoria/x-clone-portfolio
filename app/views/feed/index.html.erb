@@ -7,6 +7,6 @@
   </details>
 
   <% @feed_posts.each do |post| %>
-    <%= render(FeedPostComponent.new(title: post.title, body: post.body, updated_at: post.updated_at, post_id: post.id)) %>
+    <%= render(FeedPostComponent.new(title: post.title, body: post.body, updated_at: post.updated_at, post_id: post.id, post_image: post.post_image)) %>
   <% end %>
 </div>

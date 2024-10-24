@@ -8,6 +8,7 @@ class FeedController < ApplicationController
 
   def create
     @feed_post = FeedPost.new(feed_posts_params)
+    @feed_post.post_image.attach(feed_posts_params[:post_image])
 
     redirect_to feed_index_path if @feed_post.save
   end
@@ -22,6 +23,6 @@ class FeedController < ApplicationController
   private
 
   def feed_posts_params
-    params.permit(:title, :body)
+    params.permit(:title, :body, :post_image)
   end
 end

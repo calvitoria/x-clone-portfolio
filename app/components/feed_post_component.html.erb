@@ -19,6 +19,12 @@
     </p>
   </div>
 
+  <% if @post_image.attached? %>
+    <div class="mt-4">
+      <%= image_tag @post_image, class: "w-full h-auto rounded-lg shadow-md" %>
+    </div>
+  <% end %>
+
   <%= button_to feed_path(@post_id), method: :delete do %>
     <i class="fas fa-trash-alt"></i>
   <% end %>

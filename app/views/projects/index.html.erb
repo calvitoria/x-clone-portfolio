@@ -7,6 +7,6 @@
   </details>
 
   <% @projects.each do |project| %>
-    <%= render(ProjectComponent.new(title: project.title, body: project.body, stack: project.stack, link: project.link, project_id: project.id)) %>
+    <%= render(ProjectComponent.new(title: project.title, body: project.body, stack: project.stack, link: project.link, project_id: project.id, project_image: project.project_image)) %>
   <% end %>
 </div>
