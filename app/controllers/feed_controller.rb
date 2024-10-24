@@ -16,7 +16,7 @@ class FeedController < ApplicationController
     @feed_post = FeedPost.find(params[:id])
     @feed_post.destroy
 
-    redirect_to feed_index_path, notice: 'Post was successfully deleted.'
+    redirect_to feed_index_path
   end
 
   private
