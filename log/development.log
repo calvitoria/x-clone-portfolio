@@ -2649,3 +2649,47 @@ Started GET "/about" for 127.0.0.1 at 2024-10-23 20:49:57 -0300
   
 ActionController::RoutingError (No route matches [GET] "/about"):
   
+Started GET "/feed" for 127.0.0.1 at 2024-10-23 21:33:26 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by FeedController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering feed/index.html.erb within layouts/application
+DEPRECATION WARNING: Passing nil to the :model argument is deprecated and will raise in Rails 8.0 (called from call at /home/vitoria/Desktop/calvitoria/x-clone-portfolio/app/components/feed_post_form_component.html.erb:1)
+  [1m[36mFeedPost Load (0.5ms)[0m  [1m[34mSELECT "feed_posts".* FROM "feed_posts"[0m
+  ↳ app/views/feed/index.html.erb:9
+  Rendered feed/index.html.erb within layouts/application (Duration: 7.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | GC: 0.0ms)
+Completed 200 OK in 24ms (Views: 12.4ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2024-10-23 21:33:26 -0300
+Processing by Rails::PwaController#manifest as JSON
+  Rendering pwa/manifest.json.erb
+  Rendered pwa/manifest.json.erb (Duration: 0.3ms | GC: 0.0ms)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2024-10-23 21:33:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+Started GET "/about" for 127.0.0.1 at 2024-10-23 21:33:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+Started GET "/projects" for 127.0.0.1 at 2024-10-23 21:33:42 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/projects"):
+  
+Started GET "/about" for 127.0.0.1 at 2024-10-23 21:33:43 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+Started GET "/about" for 127.0.0.1 at 2024-10-23 21:37:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
+Started GET "/about" for 127.0.0.1 at 2024-10-23 21:37:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/about"):
+  
