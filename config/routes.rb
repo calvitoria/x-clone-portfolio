@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   root "feed#index"
 
+  get "/about", to: "about#index"
   resources :feed, only: [:index, :create, :destroy]
+
 
 end
